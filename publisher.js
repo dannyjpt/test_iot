@@ -1,5 +1,5 @@
 var mqtt = require('mqtt')
-var client  = mqtt.connect([{ host: '192.168.1.1', port: 3000 }])
+var client  = mqtt.connect([{ host: 'ws://iotechome.herokuapp.com', port: 3000 }])
 
 client.on('connect', function () {
 	client.publish('inTopic', "1")
